@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Viga&display=swap');
+/* font-family: 'Rubik', sans-serif;
+font-family: 'Viga', sans-serif; */
+/* Global */
+:root {
+	/* Color */
+	--color-white: #f1fff6;
+	--color-green: #24e5a3;
+	--color-light-green: #5ef4d6;
+	--color-blue: #4143b1;
+	--color-black: #221727;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	background: var(--color-light-green);
+	color: var(--color-black);
+	font-size: 1.5rem;
+	border-radius: 5px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+/* Header */
+.navbar {
+	display: flex;
+	justify-content: space-evenly;
+	background: var(--color-black);
+	color: var(--color-white);
+	font-family: 'Viga', sans-serif;
+	height: 5rem;
+}
+
+.navbar__logo {
+	display: flex;
+	justify-self: flex-start;
+}
+
+.navbar__logo img {
+	align-items: center;
+	line-height: 5rem;
+}
+
+.navbar__menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.5rem;
+	width: 30%;
+}
+
+.main {
+	position: relative;
+	background-image: url('../images/mintbean-dome.png');
+	width: 100%;
+	height: 100vh;
+}
+
+.main__content {
+	position: absolute;
+	top: 7rem;
+	left: 7rem;
+	width: 500px;
+	padding: 20px;
+	border: solid 1px var(--color-light-green);
+	border-radius: 4px;
+	color: var(--color-white);
+	background: #22172790;
+	font-family: 'Rubik', sans-serif;
+}
+.main__content-title {
+	font-family: 'Viga', sans-serif;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+
+.main__content-description {
+	margin: 2rem 0;
+}
+
+.navbar__toggle-btn {
+	display: none;
+}
+
+@media screen and (max-width: 480px) {
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 2rem;
+	}
+	.navbar__menu {
+		display: none;
+	}
+	.navbar__toggle-btn {
+		display: block;
+	}
+
+	.navbar__toggle-btn {
+		outline: none;
+		background: transparent;
+		border: none;
+		color: var(--color-light-green);
+	}
+}
