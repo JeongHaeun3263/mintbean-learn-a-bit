@@ -23,7 +23,8 @@ li {
 button {
 	background: var(--color-light-green);
 	color: var(--color-black);
-	font-size: 1.5rem;
+	font-size: 1.3rem;
+	padding: 0.5rem;
 	border-radius: 5px;
 	cursor: pointer;
 	text-transform: uppercase;
@@ -55,6 +56,10 @@ button {
 	align-items: center;
 	font-size: 1.5rem;
 	width: 30%;
+}
+
+.navbar__menu li {
+	justify-content: space-between;
 }
 
 .main {
@@ -108,5 +113,19 @@ button {
 		background: transparent;
 		border: none;
 		color: var(--color-light-green);
+	}
+
+	.main {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.main__content {
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		top: auto;
+		left: auto;
+		margin-top: 4rem auto;
 	}
 }
